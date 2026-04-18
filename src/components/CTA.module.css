@@ -1,0 +1,89 @@
+.cta {
+  background: #f0f0f0;
+  padding: 0 32px 80px;
+}
+
+.ctaBox {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 56px 40px;
+  text-align: center;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.ctaBox.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ctaTitle {
+  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.25;
+  color: #1a1a2e;
+}
+
+.ctaSubtitle {
+  font-size: 0.97rem;
+  color: #555577;
+  max-width: 480px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.18s, transform 0.15s, border-color 0.15s;
+  border: 2px solid transparent;
+  padding: 9px 22px;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
+.btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btnOutlineDark {
+  background: transparent;
+  color: #1a1a2e;
+  border-color: #aaaacc;
+}
+
+.btnOutlineDark:hover {
+  border-color: #1a1a2e;
+}
+
+@media (max-width: 767px) {
+  .cta {
+    padding: 0 16px 60px;
+  }
+
+  .ctaBox {
+    padding: 36px 20px;
+  }
+}
